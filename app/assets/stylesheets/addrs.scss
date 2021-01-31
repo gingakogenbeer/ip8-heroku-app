@@ -1,0 +1,23 @@
+// Place all the styles related to the addrs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+h1 {
+    text-align: center;
+}
+.ip-table{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    border: solid 2px #90a4ff;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.ip-td1{
+    border-right: solid 2px #90a4ff;
+    border-bottom: solid 2px #90a4ff;
+    width: 30%;
+}
+.ip-td2{
+    width: 70%;
+    border-bottom: solid 2px #90a4ff;
+}
