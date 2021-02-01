@@ -1,5 +1,4 @@
 <h1>ADDRESS CHECKER</h1>
-
 <table class="ip-table">
     <tbody>
         <tr class="ip-tr">
@@ -7,8 +6,20 @@
             <td class="ip-td2"><%=@remote_ip%></td>
         </tr>
         <tr class="ip-tr">
+            <td class="ip-td1">ACCESS TIME</td>
+            <td class="ip-td2"><%=@access_time%></td>
+        </tr>
+        <tr class="ip-tr">
             <td class="ip-td1">HTTP VERSION</td>
             <td class="ip-td2"><%=@http_version%></td>
+        </tr>
+        <tr class="ip-tr">
+            <td class="ip-td1">REQUEST METHOD</td>
+            <td class="ip-td2"><%=@request_method%></td>
+        </tr>
+        <tr class="ip-tr">
+            <td class="ip-td1">REQUEST URI</td>
+            <td class="ip-td2"><%=@request_uri%></td>
         </tr>
         <tr class="ip-tr">
             <td class="ip-td1">USER AGENT</td>
@@ -23,18 +34,8 @@
             <td class="ip-td2"><%=@remote_addr%></td>
         </tr>
         <tr class="ip-tr">
-            <td class="ip-td1">REQUEST METHOD</td>
-            <td class="ip-td2"><%=@request_method%></td>
-        </tr>
-        <tr class="ip-tr">
-            <td class="ip-td1">REQUEST URI</td>
-            <td class="ip-td2"><%=@request_uri%></td>
-        </tr>
-        <tr class="ip-tr">
             <td class="ip-td1">SERVER PORT</td>
             <td class="ip-td2"><%=@server_port%></td>
         </tr>
-
-
     </tbody>
 </table>

@@ -1,8 +1,14 @@
 // Place all the styles related to the addrs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-color: #f6f7fb;
+}
 h1 {
     text-align: center;
+    color: #3a3de4;
+    height: 200px;
+    margin-top: 50px;
 }
 .ip-table{
     width: 800px;
@@ -11,6 +17,9 @@ h1 {
     border: solid 2px #90a4ff;
     table-layout: fixed;
     border-collapse: collapse;
+}
+.ip-tr{
+    height: 40px;
 }
 .ip-td1{
     border-right: solid 2px #90a4ff;
