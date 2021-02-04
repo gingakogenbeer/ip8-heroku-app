@@ -9,9 +9,15 @@ class AddrsController < ApplicationController
     @request_uri = request.env["REQUEST_URI"]
     @document_root = request.env["DOCUMENT_ROOT"]
     @http_version = request.env["HTTP_VERSION"]
+    @http_accept_language = request.env["HTTP_ACCEPT_LANGUAGE"]
     @server_port = request.env["SERVER_PORT"]
-#    request.headers.sort.map { |k, v| logger.info "#{k}:#{v}" }
     @access_time = Time.zone.now
-  
+    @remote_host = request.remote_host
+    @browser = UserAgent.parse(@user_agent).browser
+    @b_version = UserAgent.parse(@user_agent).version
+    @platform = UserAgent.parse(@user_agent).platform
+
+    #request.headers.sort.map { |k, v| logger.info "#{k}:#{v}" }
+    
   end
 end
