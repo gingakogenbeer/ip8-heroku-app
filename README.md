@@ -1,2 +1,4 @@
-# ip8-heroku-app
-display access log
+# ADDRESS CHECKER
+
+When you visit the site, you will see your access log.
+
